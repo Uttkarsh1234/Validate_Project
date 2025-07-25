@@ -30,13 +30,28 @@ h1{
 }
 
 .display input{
-    border: 2px solid black;
+    border: 0;
+    outline: 0;
     padding: 8px;
     width: 18vw;
-    border-radius: 8px;
     opacity: .5px;
+    font-size: 20px;
 }
 
+.display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    background-color: white;
+}
+.display img{
+    width: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 22px;
+
+}
 .butts{
     display: flex;
     justify-content: space-between;
@@ -46,6 +61,7 @@ h1{
     border: .5px solid black;
     border-radius: 6px;
     padding: .5rem;
+    cursor: pointer;
 }
 
 .btn-success{
