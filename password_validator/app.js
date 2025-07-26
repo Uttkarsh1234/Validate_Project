@@ -29,15 +29,7 @@ create_button.addEventListener('click',()=>{
     createPassword(name_attribute);
     showPassword(visible);
 })
-create_button.addEventListener("mouseenter", () => {
-    create_button.style.backgroundColor = "black"; // or any style you want
-    create_button.style.color = "white";
-});
 
-create_button.addEventListener("mouseleave", () => {
-    create_button.style.backgroundColor = "white"; // resets to original
-    create_button.style.color = "black";
-});
 
 
 
@@ -95,6 +87,7 @@ cpy.addEventListener('click',()=>{
 })
 
 /* Listens the strengths*/
+let flag=false;
 strength.forEach((num)=>{
     num.addEventListener('click',()=>{
         if(prev){
@@ -104,5 +97,16 @@ strength.forEach((num)=>{
         name_attribute = num.getAttribute("id");
         prev=num;
         create_button.disabled=false;
+        if(!flag){
+            create_button.addEventListener("mouseenter", () => {
+                create_button.style.backgroundColor = "black"; // or any style you want
+                create_button.style.color = "white";
+            });
+
+            create_button.addEventListener("mouseleave", () => {
+                create_button.style.backgroundColor = "white"; // resets to original
+                create_button.style.color = "black";
+            });
+        }
     })
 })
