@@ -92,7 +92,3 @@ h1{
     cursor: pointer;
 }
 
-.create button:hover{
-    background-color:black;
-    color: aliceblue;
-}
