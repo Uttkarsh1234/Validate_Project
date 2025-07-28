@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Form Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Event Registeration</h1>
+    <p class="subtitle">Fill out the form below.</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name <span class="required">*</span></label>
+        <input type="text" class="input"  id="name" placeholder="Your full name" required />
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" class="input" id="email" placeholder="email" required />
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="comments">Phone Number <span class="required">*</span></label>
+        <input type="number" class="input" id="comments" rows="4" placeholder="Number"  required></input>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="Group">Group <span class="required">*</span></label>
+        <select class="input"  id="dropdown" name="myDropdownName">
+          <option value="" disabled selected>Group</option>
+          <option value="option1">G1</option>
+          <option value="option2">G2</option>
+          <option value="option3">G3</option>
+          <option value="option1">G4</option>
+          <option value="option2">G5</option>
+          <option value="option3">G6</option>
+          <option value="option1">G7</option>
+          <option value="option2">G8</option>
+          <option value="option3">G9</option>
+          <option value="option1">G10</option>
+          <option value="option2">G11</option>
+          <option value="option3">G12</option>
+        </select>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="DateOfBirth">DOB <span class="required">*</span></label>
+        <input type="date" class="input" id="dob"  placeholder="DOB"  required></input>
+      </div>
+      <hr>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

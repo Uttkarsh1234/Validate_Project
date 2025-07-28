@@ -1,0 +1,24 @@
+{
+  "User": [
+    {
+      "id": "0",
+      "Name": "Rahul",
+      "Email": "rah@ya.com",
+      "Phone Number": "123456xxxx"
+    },
+    {
+      "id": "1",
+      "Name": "Mohan",
+      "Email": "mah123@gm.com",
+      "Phone Number": "321456xxxx"
+    },
+    {
+      "id": 3,
+      "Name": "Ram",
+      "Email": "ram@gh.com",
+      "Phone Number": "543748326",
+      "Group": "option2",
+      "DOB": "2025-07-28"
+    }
+  ]
+}
